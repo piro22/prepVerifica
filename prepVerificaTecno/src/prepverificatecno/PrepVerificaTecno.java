@@ -30,7 +30,7 @@ public class PrepVerificaTecno {
             ThGenera t = new ThGenera(dc, ripeti);
             ThContaPunti cp = new ThContaPunti(dc, ripeti);
             ThContaSpazi cs = new ThContaSpazi(dc, ripeti);
-            ThAggiorna a = new ThAggiorna(dc, ripeti);
+            //ThAggiorna a = new ThAggiorna(dc, ripeti);
             
             t.start();
             cp.start();
