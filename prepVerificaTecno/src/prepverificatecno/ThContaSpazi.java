@@ -9,14 +9,13 @@ package prepverificatecno;
  *
  * @author giacomo
  */
-public class ThContaSpazi extends Thread{
+public class ThContaSpazi extends Thread {
+
     DatiCondivisi dc;
     int ripetizioni;
     char[] archivio;
     int spazi;
 
-    
-    
     public ThContaSpazi(DatiCondivisi dc, int ripetizioni) {
         this.dc = dc;
         this.ripetizioni = ripetizioni;
@@ -24,22 +23,20 @@ public class ThContaSpazi extends Thread{
         this.spazi = 0;
     }
     
-    
-    
-    public void run(){
-        for(int i = 0; i < ripetizioni; i++)
-        {
+
+    @Override
+    public void run() {
+        for (int i = 0; i < ripetizioni; i++) {
             archivio[i] = dc.recuperaArchivio(i);
             //System.out.println(archivio[i]);
-            
-            if(archivio[i] == ' '){
+
+            if (archivio[i] == ' ') {
                 spazi = spazi + 1;
             }
-            
+
             dc.setSpazi(spazi);
         }
-        
-        
+
     }
-    
+
 }

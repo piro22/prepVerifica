@@ -27,6 +27,7 @@ public class ThGenera extends Thread {
     
     
     
+    @Override               //consigliato di metterlo
     public void run()
     {
         for(int i = 0; i < ripeti; i++){

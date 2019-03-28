@@ -22,6 +22,7 @@ public class ThContaPunti extends Thread {
         this.punti = 0;
     }
     
+    @Override
     public void run()
     {
     

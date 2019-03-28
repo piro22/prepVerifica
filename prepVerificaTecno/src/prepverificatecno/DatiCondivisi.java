@@ -15,6 +15,7 @@ public class DatiCondivisi {
     private char[] archivio;
     private int punti;
     private int spazi;
+    
 
     public DatiCondivisi(int ripeti, char buffer) 
     {
